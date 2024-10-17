@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'allauth.socialaccount.providers.github',
+    'allauth.socialaccount.providers.google',
     'django.contrib.sites',
 ]
 
@@ -140,14 +140,15 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+# Provider specific settings
 SOCIALACCOUNT_PROVIDERS = {
-    'github': {
+    'google': {
         # For each OAuth based provider, either add a ``SocialApp``
         # (``socialaccount`` app) containing the required client
         # credentials, or list them here:
         'APP': {
-            'client_id': 'Ov23lin4R5F5nW5rwRIk',
-            'secret': '08b48daa68feab6ff81fc87cebc734316c1e498c',
+            'client_id': '72302507284-uku7ejikaoou93naqq50ff34eee810q8.apps.googleusercontent.com',
+            'secret': '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',
             'key': ''
         }
     }
